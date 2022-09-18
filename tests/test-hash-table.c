@@ -257,7 +257,7 @@ void test_hash_table_erase()
   void *value = NULL;
 
   CU_ASSERT_EQUAL(hash_table_ctorl1(&t, &info, 1.0, &a, &b, &c, &d, &g, &h, &e, &f, CDC_END),
-                  CDC_STATUS_OK);
+                  (CDC_STATUS_OK);
   CU_ASSERT_EQUAL(hash_table_size(t), 8);
   CU_ASSERT(hash_table_key_int_eq(t, 8, &a, &b, &c, &d, &g, &h, &e, &f));
 
